@@ -1,0 +1,75 @@
+Delivered-To: kevinkiwimusic@gmail.com
+Received: by 2002:a55:87ca:0:b029:e9:895a:afe1 with SMTP id e10csp563391ege;
+        Tue, 15 Jun 2021 00:01:54 -0700 (PDT)
+X-Received: by 2002:a17:90a:e38b:: with SMTP id b11mr4121552pjz.111.1623740514456;
+        Tue, 15 Jun 2021 00:01:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1623740514; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Kc6kULc4Ps6xXmfgcH7wPtraYODH0A1FpDfU78YXGfEL1yqpA+tJjc3xm7/A0tNTZh
+         LOo3ioEWWFoCujgCWudunBkC0gcpGmddFkH/Ni/Nlj4c8eH6d1ogp4C31gs7r1Zq4Jhp
+         rFiZskz/yYM3eFnrriUh9LOobcVUG9h106J//XbzHo7P8fXbNpw5OSFBZ/dZgzAWA4x4
+         dVAcqw+/Ly6bOEngXTgPBC1u2Rg2/izDsnQiUmPjNOr1wgXOxgR5pDWPtySGwOUI0L6f
+         9/zqTzHA6UhEsRweKsqdtH7CIGtQVZb9f0OjgYF0QcxfJIKZT4ejs89eAj7zadamuidG
+         L35g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:from:date:message-id:dkim-signature;
+        bh=6wySbWXxfYq2i9SNX9T1z9hKc323yk1yIgHoPlMyDQ4=;
+        b=UBztqExyW8GkZ5j2P+zlvA/aeNuFVZhQL//F0xDoRTmzLUEATw2IndrAvdbWyusreo
+         3UCPscerL3BigI3tac2dTUdMi/BH4E/YwnBmvsyod144ewc+nSdMo5Qk8IAHjD6BSjIZ
+         uZ8/nexLF5xLHCU+WuCNMm95T9m+9TRXAiy4MDSjeGsjs8tm9JJ92Pg7RetemBLfHS/K
+         Stm4xizBjMwJbws81aiaXgxsgoEHsvlvVTelhL4j6wje38yikOFiJ08G9/g5GhpTNA0K
+         vM5qUfZq1wGji1Owsv92704fH5h3iL6KNPGGEJT9uBbpiB1dB4fX3DwG4/dDtFKxdxQb
+         zq3w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gm2-nutn-edu-tw.20150623.gappssmtp.com header.s=20150623 header.b=KGT1HH4Q;
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of s10759018@gm2.nutn.edu.tw) smtp.mailfrom=s10759018@gm2.nutn.edu.tw
+Return-Path: <s10759018@gm2.nutn.edu.tw>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id c7sor1047131pjr.36.2021.06.15.00.01.53
+        for <kevinkiwimusic@gmail.com>
+        (Google Transport Security);
+        Tue, 15 Jun 2021 00:01:54 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of s10759018@gm2.nutn.edu.tw) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gm2-nutn-edu-tw.20150623.gappssmtp.com header.s=20150623 header.b=KGT1HH4Q;
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of s10759018@gm2.nutn.edu.tw) smtp.mailfrom=s10759018@gm2.nutn.edu.tw
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gm2-nutn-edu-tw.20150623.gappssmtp.com; s=20150623;
+        h=message-id:date:from:subject;
+        bh=6wySbWXxfYq2i9SNX9T1z9hKc323yk1yIgHoPlMyDQ4=;
+        b=KGT1HH4QD1DCz+Wx0RA+U5+OTkCnxx+IeHEOtva0KB7hHOgkkC084/8tqdXtSIiQI+
+         esK6XuMrCb4FrTil47AZH0AfKfp5uvwD1mJ6EfJQx1fWk7yoKktg5A8pd3O5aoNEuIC3
+         xA1OfauYCMb9AEfNGy65n6hFOMUVjUPeSrHRaQFDOzuZoXtNiCYho2jSCmK21ZgxDK+g
+         pFWhemz8JEObrnvo/x5n7+0rCxYgWB1FSeQ/th7x2M2RvxkKV3ccsf6PJFUn/akmmk/A
+         LqIjzYu+fwQDQeq0UeeuIdfxnu+laGZrRI72lauR+gJFi06wBBResJmE6B0g3gzX2xz4
+         zqBA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:message-id:date:from:subject;
+        bh=6wySbWXxfYq2i9SNX9T1z9hKc323yk1yIgHoPlMyDQ4=;
+        b=rFIuz125x22LP7Cr3AOvhs52COIiCtQlBoBNuHjc9YWzP8nlQukKk02lKubsNiDBP3
+         +0QIbkCbcTfXKzRI7BH8d2KwHVFIvdFjW8oGyzWkzIobo3EwrwqTKieOa+Bc9EWVP0iu
+         8PZ/oZoZkPdOBrSuc3NAm73gQa8qlXtQQuv3VeFRWAVGyU5dAfDt0HHZiylcY2szNhHj
+         e8bbFJ975cjW8hM5MgEAVubTGUmTcpUic/IEQECXqat70sYPkAWFGyiK65CQrZhMva2l
+         EEx00XaMV1WvVFUXdBUUpoj5mLoY3QjXS3LWZVI+cgIl9agqZKvANN0xjQGo59Ubz0zZ
+         AjOA==
+X-Gm-Message-State: AOAM530xMLSklR9bmLBDX2ThHKS7JUMQp+CDeQEsrBQTyzSia4EkBcEP
+	oChG888jrYXWo7DOFDjd8vmIr595+vx8W5HM
+X-Google-Smtp-Source: ABdhPJz95q7+bqDfU5pfeAHftXAkV/SHompo3pZs1W/DKXSq4jZn1VKrTKbsdTfDxajfzCNcd2HpcA==
+X-Received: by 2002:a17:90b:901:: with SMTP id bo1mr23519474pjb.0.1623740513473;
+        Tue, 15 Jun 2021 00:01:53 -0700 (PDT)
+Return-Path: <s10759018@gm2.nutn.edu.tw>
+Received: from DESKTOP-O65K9CA ([122.147.22.183])
+        by smtp.gmail.com with SMTPSA id n14sm13836356pfa.138.2021.06.15.00.01.52
+        for <kevinkiwimusic@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 15 Jun 2021 00:01:53 -0700 (PDT)
+Message-ID: <60c85061.1c69fb81.effc2.8dd4@mx.google.com>
+Date: Tue, 15 Jun 2021 00:01:53 -0700 (PDT)
+From: s10759018@gm2.nutn.edu.tw
+Subject:Test_HW
+
+Hello
+test
+
+.
