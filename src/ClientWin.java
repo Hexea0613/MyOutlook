@@ -161,7 +161,7 @@ public class ClientWin extends javax.swing.JFrame {
 
         jLabel5.setText("Your Email Adderss : ");
 
-        yourEmailAddress.setText("s10759018@gm2.nutn.edu.tw ");
+        yourEmailAddress.setText("");
         yourEmailAddress.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 yourEmailAddressActionPerformed(evt);
@@ -216,7 +216,7 @@ public class ClientWin extends javax.swing.JFrame {
 
         jLabel9.setText("Receivers' Email Address (Split with space) : ");
 
-        receiverAddr.setText("kevinkiwimusic@gmail.com ");
+        receiverAddr.setText("");
         receiverAddr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 receiverAddrActionPerformed(evt);
